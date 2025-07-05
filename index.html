@@ -1,42 +1,127 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moja Pierwsza Strona</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sklep z Kontami YouTube – Antino99</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      font-size: 48px;
-    }
-    p {
-      font-size: 20px;
-      color: #ccc;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #00bcd4;
+      background: #0f0f0f;
       color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
+    }
+    header {
+      background: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro p {
+      color: #ccc;
+      font-size: 18px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+    .card p {
+      color: #bbb;
+    }
+    .card .price {
+      font-weight: bold;
+      color: #00ffcc;
+      margin-top: 10px;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00bcd4;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
       transition: 0.3s;
     }
-    a.button:hover {
-      background-color: #0097a7;
+    .card button:hover {
+      background: #0097a7;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 30px 0;
+    }
+    .admin-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .admin-link a {
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .admin-link a:hover {
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Cześć, jestem Bartek!</h1>
-  <p>To moja pierwsza strona internetowa zrobiona dzięki GitHub Pages.</p>
-  <a href="#" class="button">Zobacz więcej</a>
+  <header>
+    <h1>Sprzedaż Kont YouTube – Antino99</h1>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <p>Oferuję prawdziwe konta YouTube z subami, monetą i historią. Bezpieczna sprzedaż, szybki kontakt.</p>
+    </div>
+
+    <div class="card">
+      <h2>Konto 1 – 3 000 subskrypcji</h2>
+      <p>Aktywne konto z monetą i dobrym CTR. Gotowe do zarabiania od razu.</p>
+      <div class="price">Cena: 150 zł</div>
+      <button>Kup teraz</button>
+    </div>
+
+    <div class="card">
+      <h2>Konto 2 – 1 200 subów (brak monetyzacji)</h2>
+      <p>Konto idealne na start, realna widownia, dostęp pełny.</p>
+      <div class="price">Cena: 75 zł</div>
+      <button>Kup teraz</button>
+    </div>
+
+    <div class="card">
+      <h2>Konto 3 – 5 500 subskrypcji + Shorts</h2>
+      <p>Bardzo aktywny kanał z historią, Shorts viralowe. Monetka aktywna.</p>
+      <div class="price">Cena: 220 zł</div>
+      <button>Kup teraz</button>
+    </div>
+
+    <div class="admin-link">
+      <a href="admin.html">Panel sprzedawcy (logowanie)</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Antino99 – Wszystkie prawa zastrzeżone.
+  </footer>
 </body>
 </html>
