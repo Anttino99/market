@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Admina – Antino99</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      margin: 10px;
+      width: 300px;
+      max-width: 90%;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    input[type="password"] {
+      background: #222;
+      color: #fff;
+    }
+    .hidden {
+      display: none;
+    }
+    .form-box {
+      margin-top: 30px;
+    }
+    button {
+      background-color: #00bcd4;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+    .output {
+      margin-top: 30px;
+      color: #0f0;
+      font-family: monospace;
+      white-space: pre-wrap;
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Panel Sprzedawcy</h1>
+
+  <div id="login-box">
+    <p>Wpisz hasło, aby uzyskać dostęp:</p>
+    <input type="password" id="password" placeholder="Hasło admina" />
+    <br />
+    <button onclick="checkPassword()">Zaloguj</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <div id="admin-panel" class="hidden">
+    <div class="form-box">
+      <h2>Dodaj nowe konto na sprzedaż</h2>
+      <input type="text" id="nazwa" placeholder="Nazwa konta (np. Konto 4)" />
+      <textarea id="opis" placeholder="Opis konta"></textarea>
+      <input type="text" id="cena" placeholder="Cena (np. 150 zł)" />
+      <br />
+      <button onclick="dodajKonto()">Wygeneruj dane</button>
+    </div>
+
+    <div class="output" id="wynik"></div>
+  </div>
+
+  <script>
+    const haslo = "admin123"; // ← Możesz tu zmienić swoje hasło
+
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      if (input === haslo) {
+        document.getElementById("login-box").classList.add("hidden");
+        document.getElementById("admin-panel").classList.remove("hidden");
+      } else {
+        document.getElementById("error").textContent = "Nieprawidłowe hasło.";
+      }
+    }
+
+    function dodajKonto() {
+      const nazwa = document.getElementById("nazwa").value;
+      const opis = document.getElementById("opis").value;
+      const cena = document.getElementById("cena").value;
+
+      const szablon = `
+<div class="card">
+  <h2>${nazwa}</h2>
+  <p>${opis}</p>
+  <div class="price">Cena: ${cena}</div>
+  <button>Kup teraz</button>
+</div>`;
+
+      document.getElementById("wynik").textContent = szablon.trim();
+    }
+  </script>
+</body>
+</html>
