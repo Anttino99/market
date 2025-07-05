@@ -2,126 +2,146 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sklep z Kontami YouTube – Antino99</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sklep z kontami YouTube</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      background-color: #0e0e0e;
       color: #fff;
     }
+
     header {
-      background: #1c1c1c;
-      padding: 20px;
+      background-color: #1c1c1c;
+      padding: 40px 20px 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00bcd4;
+      margin-bottom: 10px;
     }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
     .container {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    .intro {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .intro p {
-      color: #ccc;
-      font-size: 18px;
-    }
+
     .card {
-      background: #1a1a1a;
+      background-color: #1a1a1a;
       padding: 20px;
-      margin-bottom: 20px;
       border-radius: 10px;
+      margin-bottom: 20px;
       box-shadow: 0 0 10px #000;
     }
+
     .card h2 {
       margin-top: 0;
-      font-size: 24px;
+      font-size: 22px;
     }
+
     .card p {
-      color: #bbb;
+      color: #aaa;
+      font-size: 15px;
     }
-    .card .price {
-      font-weight: bold;
+
+    .price-box {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .price-old {
+      text-decoration: line-through;
+      color: #777;
+      margin-right: 10px;
+    }
+
+    .price-new {
       color: #00ffcc;
-      margin-top: 10px;
+      font-weight: bold;
     }
-    .card button {
-      margin-top: 10px;
+
+    button {
+      margin-top: 15px;
       padding: 10px 20px;
-      background: #00bcd4;
-      border: none;
+      background-color: #00bcd4;
       color: #fff;
+      border: none;
       border-radius: 6px;
       cursor: pointer;
       transition: 0.3s;
     }
-    .card button:hover {
-      background: #0097a7;
+
+    button:hover {
+      background-color: #0097a7;
     }
+
     footer {
       text-align: center;
       color: #666;
       padding: 30px 0;
-    }
-    .admin-link {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .admin-link a {
-      color: #555;
-      text-decoration: none;
       font-size: 14px;
-    }
-    .admin-link a:hover {
-      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sprzedaż Kont YouTube – Antino99</h1>
+    <img src="https://i.pravatar.cc/200?img=23" alt="Avatar" />
+    <h1>Sprzedaję konta YouTube</h1>
+    <p>Prawdziwe konta z subami, monetką i historią. Sprawdzone. Promocje aktualne.</p>
   </header>
 
   <div class="container">
-    <div class="intro">
-      <p>Oferuję prawdziwe konta YouTube z subami, monetą i historią. Bezpieczna sprzedaż, szybki kontakt.</p>
-    </div>
 
     <div class="card">
-      <h2>Konto 1 – 3 000 subskrypcji</h2>
-      <p>Aktywne konto z monetą i dobrym CTR. Gotowe do zarabiania od razu.</p>
-      <div class="price">Cena: 150 zł</div>
+      <h2>Konto 1 – 3 000 subów + monetyzacja</h2>
+      <p>Gotowe konto do zarabiania. Aktywna społeczność i dobre zasięgi.</p>
+      <div class="price-box">
+        <span class="price-old">2000 zł</span>
+        <span class="price-new">1000 zł</span>
+      </div>
       <button>Kup teraz</button>
     </div>
 
     <div class="card">
-      <h2>Konto 2 – 1 200 subów (brak monetyzacji)</h2>
-      <p>Konto idealne na start, realna widownia, dostęp pełny.</p>
-      <div class="price">Cena: 75 zł</div>
+      <h2>Konto 2 – 1 200 subów</h2>
+      <p>Konto bez monety, idealne na start. Realni widzowie, żadnych botów.</p>
+      <div class="price-box">
+        <span class="price-old">400 zł</span>
+        <span class="price-new">250 zł</span>
+      </div>
       <button>Kup teraz</button>
     </div>
 
     <div class="card">
-      <h2>Konto 3 – 5 500 subskrypcji + Shorts</h2>
-      <p>Bardzo aktywny kanał z historią, Shorts viralowe. Monetka aktywna.</p>
-      <div class="price">Cena: 220 zł</div>
+      <h2>Konto 3 – 5 500 subów + Shorts virale</h2>
+      <p>Monetyzacja + viralowe Shorts. Kanał z potencjałem na rozwój.</p>
+      <div class="price-box">
+        <span class="price-old">3000 zł</span>
+        <span class="price-new">1800 zł</span>
+      </div>
       <button>Kup teraz</button>
     </div>
 
-    <div class="admin-link">
-      <a href="admin.html">Panel sprzedawcy (logowanie)</a>
-    </div>
   </div>
 
   <footer>
-    &copy; 2025 Antino99 – Wszystkie prawa zastrzeżone.
+    &copy; 2025 – Wszystkie prawa zastrzeżone
   </footer>
 </body>
 </html>
